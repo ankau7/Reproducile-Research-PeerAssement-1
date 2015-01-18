@@ -21,7 +21,7 @@ colnames(stepsPerDay) <- c("date","steps")
 hist(stepsPerDay$steps, breaks = 50, xlab="Total steps taken each day")
 ```
 
-![](PA1_templateB_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![](PA1_template_files/figure-markdown_github/unnamed-chunk-2-1.png)
 
 ``` {.r}
 mean(stepsPerDay$steps, na.rm=TRUE)
@@ -43,7 +43,7 @@ colnames(dailyAverage) <- c("interval","steps")
 plot(dailyAverage$interval, dailyAverage$steps, type = "l", xlab = "5-minutes interval", ylab ="average number of steps taken")
 ```
 
-![](PA1_templateB_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](PA1_template_files/figure-markdown_github/unnamed-chunk-3-1.png)
 
 ``` {.r}
 dailyAverage[which.max(dailyAverage$steps),]
@@ -78,7 +78,7 @@ colnames(stepsPerDayNoNA) <- c("date","steps")
 hist(stepsPerDayNoNA$steps, breaks = 50, xlab="Total steps taken each day")
 ```
 
-![](PA1_templateB_files/figure-markdown_github/unnamed-chunk-6-1.png)
+![](PA1_template_files/figure-markdown_github/unnamed-chunk-6-1.png)
 
 ``` {.r}
 mean(stepsPerDay$steps, na.rm=TRUE)
@@ -124,4 +124,4 @@ weekday <- ggplot(stepsWeekPart, aes(interval, steps)) + geom_line() + facet_gri
 plot(weekday)
 ```
 
-![](PA1_templateB_files/figure-markdown_github/unnamed-chunk-7-1.png)
+![](PA1_template_files/figure-markdown_github/unnamed-chunk-7-1.png)

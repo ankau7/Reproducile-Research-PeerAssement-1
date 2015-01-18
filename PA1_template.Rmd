@@ -2,9 +2,10 @@
 title: "Reproducile Research Peer Assement 1"
 author: "AK"
 date: "Sunday, January 18, 2015"
-output:
+output: 
   md_document:
-     variant: markdown_github
+    variant: markdown_github
+  
 ---
 
 Processing the Data
